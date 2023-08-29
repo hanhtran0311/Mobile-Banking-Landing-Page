@@ -78,6 +78,18 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <!-- Embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animated CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Grid CSS -->
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <!-- Reset CSS -->
@@ -85,5 +97,124 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container" style="height: 5000px">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-row">
+          <!-- Logo -->
+          <a href="#!" class="logo-group">
+            <img src="./assets/icon/logo.svg" alt="Celobank" />
+            <img src="./assets/icon/CeloBank.svg" alt="" />
+          </a>
+
+          <!-- Navbar -->
+          <div class="nav">
+            <ul class="nav__list">
+              <li>
+                <a href="#!" class="nav__item desc nav__item-active">Home</a>
+              </li>
+              <li>
+                <a href="#!" class="nav__item desc">Products</a>
+              </li>
+              <li>
+                <a href="#!" class="nav__item desc">Feature</a>
+              </li>
+              <li>
+                <a href="#!" class="nav__item desc">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Header action -->
+          <div class="header__action">
+            <a href="#!" class="header__action-link desc">Log in</a>
+            <a href="#!" class="header__action-btn btn desc">Sign up</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="row">
+          <!-- Hero left -->
+          <article class="hero-content col-lg-6">
+            <p class="hero__title desc">Digital Smart Wallet</p>
+            <h1
+              class="hero__heading animate__animated animate__pulse animate__delay-1s"
+            >
+              Digital
+              <strong>Payment</strong>
+              For Everyone.
+            </h1>
+            <p class="hero__desc desc">
+              We bring together eveything that’s required to build websites and
+              apps that accept payments and send payouts globally. We are the
+              best platform.
+            </p>
+            <form action="" autocomplete="off" class="hero-form">
+              <input
+                type="email"
+                class="hero-form__input"
+                name="email"
+                id="email"
+                placeholder="Your email address"
+              />
+              <button class="hero-form__submit btn">Get Started</button>
+            </form>
+            <p class="hero__notice desc">
+              *We’ll respect the inbox and never share your email.
+            </p>
+          </article>
+
+          <!-- Hero right -->
+          <div class="hero-media col-lg-5 offset-lg-1">
+            <figure>
+              <img
+                src="./assets/img/Mobile Screen.png"
+                alt="Digital Payment For Everyone."
+                class="hero-media__img"
+              />
+            </figure>
+
+            <div
+              class="hero-deposite animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <img
+                src="./assets/icon/hero-deposite.svg"
+                alt=""
+                class="hero-media__icon"
+              />
+              <span class="hero-deposite__desc desc">Deposite</span>
+              <span class="hero-deposite__price desc">$32000</span>
+            </div>
+
+            <div
+              class="hero-interest animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <strong>0%</strong>
+              <p class="hero-interest__desc desc">Interest</p>
+            </div>
+
+            <div
+              class="hero-fund animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <img
+                src="./assets/icon/hero-$.svg"
+                alt=""
+                class="hero-fund__icon"
+              />
+              <div class="hero-fund__row">
+                <div class="hero-fund__row-price desc">$1.310</div>
+                <div class="hero-fund__row-desc">SECURED FUNDS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Container -->
+
+    <script src="./main.js"></script>
+  </body>
 </html>
