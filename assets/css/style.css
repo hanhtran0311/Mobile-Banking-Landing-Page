@@ -205,6 +205,7 @@ a {
 
 .hero-form__input {
   border: none;
+  outline: none;
   font-size: 1.6rem;
 }
 
@@ -313,4 +314,240 @@ a {
   font-size: 0.8rem;
   font-weight: 400;
   color: #fff;
+}
+
+/* ---------- Feature ------------ */
+.feature {
+  margin-top: 160px;
+}
+
+.feature-media {
+  position: relative;
+}
+
+.feature-media__img {
+  width: 456px;
+  height: 619px;
+  object-fit: cover;
+}
+
+.feature__bank-icon {
+  position: absolute;
+  top: 80px;
+  right: 85px;
+}
+
+.feature-info {
+  position: absolute;
+  right: -88px;
+  bottom: 100px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  width: 226px;
+  border-radius: 8px;
+  background: #fffdfa;
+  box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature-info__label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.feature-info__text {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.feature__heading {
+  margin-top: 12px;
+}
+
+.feature-content {
+  margin-top: 29px;
+}
+
+.feature-content__body {
+  margin-top: 70px;
+}
+
+.feature__title {
+  margin-top: 30px;
+  font-size: 2.2rem;
+  line-height: 1.45;
+  color: var(--secondary-color);
+}
+
+.feature__desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+}
+
+/*  */
+.feature-row:nth-child(2) {
+  margin-top: 160px;
+}
+
+.feature__item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.667;
+  color: var(--secondary-color);
+}
+
+.feature__item::before {
+  margin-right: 12px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.feature__item-group {
+  margin-top: 28px;
+}
+
+.feature__item:not(:first-child) {
+  margin-top: 18px;
+}
+
+.feature__btn {
+  margin-top: 38px;
+  transition: background 0.5s;
+}
+
+.feature__btn:hover {
+  background: var(--primary-color);
+}
+
+/*  */
+.feature-media__card {
+  position: relative;
+}
+
+.feature-media__cash-card {
+  margin-top: 86px;
+}
+
+.feature-info__send-money {
+  position: absolute;
+  top: 38px;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  padding: 23px 13px;
+  width: 276px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature-info__title {
+  margin-left: 14px;
+}
+
+.feature-info__airplane {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-info__money {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.feature-info__date,
+.feature-info__airbnb {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #696d76;
+}
+
+.feature-info__body {
+  margin-left: 67px;
+}
+
+.feature-info__price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.feature-info__date {
+  margin-left: 14px;
+}
+
+.feature-info__income {
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+
+  padding: 15px;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: #439f90;
+}
+
+.feature-info__income-text {
+  margin-top: 14px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.feature-info__income-price {
+  margin-top: 6px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*  */
+.feature-row:nth-child(3) {
+  margin-top: 160px;
+}
+
+.feature__decor {
+  position: absolute;
+  right: -130px;
+  bottom: 172px;
+  z-index: 1;
+}
+
+.feature-payment {
+  position: absolute;
+  right: -70px;
+  bottom: 58px;
+  padding: 28px;
+  width: 281px;
+  border-radius: 6px;
+  background: #fff;
+  filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+}
+
+.feature-payment__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  color: var(--secondary-color);
+}
+
+.feature-payment__methods {
+  margin-top: 20px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
 }
